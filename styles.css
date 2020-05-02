@@ -14,23 +14,138 @@ html{
 body{
     box-sizing: border-box;
     background: #F6CC7B;
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: #010106;
     font-size: 1.6rem;
+    padding-top: 10rem;
 }
 
 h1 {
     font-size: 2rem;
+    font-weight: 300;
 }
 
-img{
-    width: 6rem;
+a{
+    text-decoration: none;
+    color: #010106;
 }
 
 .card {
     background: #fff;
-    width: 100rem;
+    width: 83rem;
     display: flex;
+    height: 45rem;
+    margin: 0 auto;
+    border-radius: .4rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3.2rem;
+    align-items: center;
+}
+
+.my_wallets {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.3%;
+    overflow: scroll;
+    background: #F2F2F2;
+    padding: 3.2rem ;
+}
+
+.my_wallets__card {
+    /* height: 13rem; */
+    /* margin: 0 auto; */
+    padding: 1.6rem;
+    width: 20rem;
+    background: #fff;
+    border: 1px #e7e7e7 solid;
+    border-radius: .4rem;
+    margin-bottom: 2.4rem;
+}
+
+.exp_date,
+.card-number {
+    opacity: .6;
+}
+
+.exp_date {
+    font-size: 1.4rem;
+    margin-top: .4rem;
+}
+
+.active{
+    border: 2px #8F99C1 solid;
+}
+
+.my_wallets__card::hover{
+    border: 2px #8F99C1 solid;
+}
+
+.my_wallets__card img{
+        width: 6rem;
+}
+.current_balance {
+    flex-basis: 66.3%;
+    overflow: scroll;
+    padding: 3.2rem ;
+}
+
+.current_balance__header {
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 3.2rem;
+}
+
+.current_balance__header sup.cents{
+    font-size: 1.6rem;
+}
+
+.calc_balance {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.payment_history{
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.payment_history__info {
+    flex-grow: 1;
+    margin-left: 2.4rem;
+}
+
+.payment_history__status {
+    border: 1px solid #e7e7e7;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: .4rem;
+}
+
+.payment_history__title {
+    font-weight: 700;
+    margin-bottom: .4rem;
+}
+
+.payment_history__invoice {
+    opacity: .5;
+    font-size: 1.4rem;
+}
+
+.payment_history__cost {
+    font-weight: 500;
+    color: rgb(113, 131, 182);
+}
+
+.refund{
+    color: rgb(104, 189, 52);
+}
+
+.payment_history__cost sup.cents{
+    font-size: 1.2rem;
 }
 
 
