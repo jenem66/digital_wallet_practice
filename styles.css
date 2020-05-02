@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+		/* set up sizing for using REM*/
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+    background: #F6CC7B;
+    font-family: "Roboto";
+    color: #010106;
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+img{
+    width: 6rem;
+}
+
+.card {
+    background: #fff;
+    width: 100rem;
+    display: flex;
+}
+
+
+
