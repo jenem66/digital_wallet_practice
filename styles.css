@@ -36,7 +36,7 @@ a{
     display: flex;
     height: 45rem;
     margin: 0 auto;
-    border-radius: .4rem;
+    border-radius: 1rem;
 }
 
 .header{
@@ -50,9 +50,15 @@ a{
     display: flex;
     flex-direction: column;
     flex-basis: 33.3%;
-    overflow: scroll;
     background: #F2F2F2;
     padding: 3.2rem ;
+    overflow: hidden;
+    transition: ease-in .2s;
+    overflow: auto;
+}
+
+.my_wallets:hover{
+    /* overflow: scroll; */
 }
 
 .my_wallets__card {
@@ -61,9 +67,14 @@ a{
     padding: 1.6rem;
     width: 20rem;
     background: #fff;
-    border: 1px #e7e7e7 solid;
+    border: 2px #e7e7e7 solid;
     border-radius: .4rem;
     margin-bottom: 2.4rem;
+    transition: ease-in-out .3s;
+}
+
+.my_wallets__card:hove {
+    border: 2px #8F99C1 solid;
 }
 
 .exp_date,
@@ -80,7 +91,7 @@ a{
     border: 2px #8F99C1 solid;
 }
 
-.my_wallets__card::hover{
+.my_wallets__card:hover{
     border: 2px #8F99C1 solid;
 }
 
@@ -89,8 +100,13 @@ a{
 }
 .current_balance {
     flex-basis: 66.3%;
-    overflow: scroll;
+    overflow: hidden;
     padding: 3.2rem ;
+    overflow: auto;
+}
+
+.current_balance:hover{
+    /* overflow: auto; */
 }
 
 .current_balance__header {
@@ -109,8 +125,14 @@ a{
 
 .payment_history{
     display: flex;
-    margin-bottom: 4rem;
+    padding: 2rem 0;
+    transition: ease-in-out .2;
 }
+
+/* .payment_history:hover{
+    background: #f8f8f8;
+    border-radius: 4px;
+} */
 
 .payment_history__info {
     flex-grow: 1;
